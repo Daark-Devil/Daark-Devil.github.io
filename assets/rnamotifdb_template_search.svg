@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" viewBox="0 0 900 560" role="img" font-family="Inter, system-ui, Arial, sans-serif">
+<title>RNAMotifDB template search pipeline for R1116</title>
+<desc>R1116 RNA sequence and dot-bracket structure decomposed into 17 motifs, each matched to best template structures from the PDB.</desc>
+<rect x="0" y="0" width="900" height="560" fill="#0d1728" rx="14"/>
+
+<!-- Step 1: input sequence -->
+<text x="34" y="40" fill="#39c6df" font-size="13" font-weight="700" letter-spacing="1.5">INPUT: RNA SEQUENCE (R1116, 157 nt)</text>
+<rect x="34" y="52" width="832" height="34" rx="8" fill="#111d31" stroke="#23344f"/>
+<text x="48" y="74" fill="#cdd9ec" font-size="12.5" font-family="monospace" letter-spacing="0.5">CGCCCGGAUAGCUCAGUCGGUAGAGCAGCGGCUAAAACAGCUCUGGGGUUGUACCCACCCCAGAGGCCCACGUGGCGGCUAGUACUCC...</text>
+
+<!-- Step 2: 2D structure -->
+<text x="34" y="118" fill="#39c6df" font-size="13" font-weight="700" letter-spacing="1.5">SECONDARY STRUCTURE (dot-bracket)</text>
+<rect x="34" y="130" width="832" height="34" rx="8" fill="#111d31" stroke="#23344f"/>
+<text x="48" y="152" fill="#9ee9f5" font-size="12.5" font-family="monospace" letter-spacing="0.5">((((((((...(((........)))(.(((((((((((((.((((((((.......))))))))(((((.....).))))...))))</text>
+
+<!-- arrow down -->
+<text x="450" y="190" fill="#4f8cff" font-size="13" font-weight="700" text-anchor="middle">↓  VFold3D motif decomposition</text>
+
+<!-- Step 3: motif decomposition summary -->
+<text x="34" y="222" fill="#39c6df" font-size="13" font-weight="700" letter-spacing="1.5">MOTIF DECOMPOSITION (17 motifs)</text>
+<g font-size="12" font-weight="700">
+<rect x="34" y="234" width="172" height="30" rx="8" fill="#172740" stroke="#2f4a6b"/><text x="120" y="254" fill="#bdd3f0" text-anchor="middle">2 junctions (2-way, 4-way)</text>
+<rect x="218" y="234" width="110" height="30" rx="8" fill="#172740" stroke="#2f4a6b"/><text x="273" y="254" fill="#bdd3f0" text-anchor="middle">5 hairpins</text>
+<rect x="340" y="234" width="110" height="30" rx="8" fill="#172740" stroke="#2f4a6b"/><text x="395" y="254" fill="#bdd3f0" text-anchor="middle">8 helices</text>
+<rect x="462" y="234" width="90" height="30" rx="8" fill="#172740" stroke="#2f4a6b"/><text x="507" y="254" fill="#bdd3f0" text-anchor="middle">1 tail</text>
+</g>
+
+<!-- arrow down -->
+<text x="450" y="296" fill="#4f8cff" font-size="13" font-weight="700" text-anchor="middle">↓  template search against motif database</text>
+
+<!-- Step 4: template matches table -->
+<text x="34" y="328" fill="#38b98d" font-size="13" font-weight="700" letter-spacing="1.5">BEST TEMPLATE MATCHES (from PDB)</text>
+
+<g font-size="12.5">
+<!-- header -->
+<rect x="34" y="340" width="832" height="28" rx="6" fill="#13233a"/>
+<text x="48" y="359" fill="#7e93ad" font-weight="700">MOTIF</text>
+<text x="320" y="359" fill="#7e93ad" font-weight="700">TOP TEMPLATE</text>
+<text x="560" y="359" fill="#7e93ad" font-weight="700">MATCHED SEQUENCE</text>
+<text x="790" y="359" fill="#7e93ad" font-weight="700">SCORE</text>
+
+<!-- rows -->
+<g fill="#cdd9ec">
+<text x="48" y="386">2-way junction</text><text x="320" y="386" fill="#9ee9f5" font-weight="700">1txs</text><text x="560" y="386" font-family="monospace">CUCUG / CUUUG</text><text x="800" y="386" fill="#38b98d" font-weight="700">4</text>
+<text x="48" y="410">4-way junction</text><text x="320" y="410" fill="#9ee9f5" font-weight="700">1c2w</text><text x="560" y="410" font-family="monospace">GGU AG GAA UGAC</text><text x="800" y="410" fill="#38b98d" font-weight="700">11</text>
+<text x="48" y="434">4-way junction</text><text x="320" y="434" fill="#9ee9f5" font-weight="700">6mtb</text><text x="560" y="434" font-family="monospace">AUAGC GCAU ...</text><text x="800" y="434" fill="#38b98d" font-weight="700">2</text>
+<text x="48" y="458">hairpin (loop 7)</text><text x="320" y="458" fill="#9ee9f5" font-weight="700">5cd1</text><text x="560" y="458" font-family="monospace">GUUCAAGUC</text><text x="800" y="458" fill="#38b98d" font-weight="700">0</text>
+<text x="48" y="482">hairpin (loop 8)</text><text x="320" y="482" fill="#9ee9f5" font-weight="700">4v4y</text><text x="560" y="482" font-family="monospace">CAGUCGGUAG</text><text x="800" y="482" fill="#38b98d" font-weight="700">0</text>
+<text x="48" y="506">3' tail</text><text x="320" y="506" fill="#9ee9f5" font-weight="700">4rdx</text><text x="560" y="506" font-family="monospace">CCCA</text><text x="800" y="506" fill="#38b98d" font-weight="700">1</text>
+</g>
+<line x1="34" y1="394" x2="866" y2="394" stroke="#1d2d45"/>
+<line x1="34" y1="418" x2="866" y2="418" stroke="#1d2d45"/>
+<line x1="34" y1="442" x2="866" y2="442" stroke="#1d2d45"/>
+<line x1="34" y1="466" x2="866" y2="466" stroke="#1d2d45"/>
+<line x1="34" y1="490" x2="866" y2="490" stroke="#1d2d45"/>
+</g>
+
+<text x="34" y="540" fill="#7e93ad" font-size="11.5">Score = sequence mismatches vs template (lower is closer). 13 motifs matched to PDB templates; 8 helices use universal templates.</text>
+</svg>
